@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add test method with Arrange Act Assert sections and TestCase</Title>
+      <Shortcut>testncase</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+    <Declarations>
+        <Literal>
+          <ID>should</ID>
+        </Literal>
+        <Literal>
+          <ID>when</ID>
+        </Literal>
+        <Literal>
+          <ID>params</ID>
+        </Literal>
+        <Literal>
+          <ID>variables</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[TestCase($variables$)]
+        public void Should$should$_When$when$($params$)
+        {
+            // Arrange
+            $selected$$end$
+
+            // Act
+
+            // Assert
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+
