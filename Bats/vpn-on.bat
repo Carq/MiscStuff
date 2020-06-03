@@ -1,0 +1,1 @@
+"c:/Program Files/OpenVPN/bin/openvpn-gui.exe" --connect xxx.ovpn
