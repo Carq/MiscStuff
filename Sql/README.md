@@ -12,6 +12,6 @@ Source: https://www.sqlskills.com/blogs/glenn/
 
 [Dark Theme](SSMSThemes/DarkScheme.vssettings)
 
-![SSMS dark scheme preview](SSMSThemes/DarkScheme.preview.png)
+![SSMS dark scheme preview](SSMSThemes/DarkScheme.Preview.png)
 
 Other way to customize your SSMS: https://github.com/tcartwright/SSMSThemeEditor
