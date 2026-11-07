@@ -1,11 +1,14 @@
 Import-Module oh-my-posh
 oh-my-posh --init --shell pwsh --config C:\Users\Carq\Documents\WindowsTerminal\elantris.omp.json | Invoke-Expression
+Enable-PoshTransientPrompt
 
 Import-Module -Name Terminal-Icons
 Import-Module PSReadLine
 Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
