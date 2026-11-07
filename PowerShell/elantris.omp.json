@@ -23,12 +23,6 @@
         },
         {
           "foreground": "#e2970c",
-          "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#F38BA8{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FAB387{{ end }}",
-            "{{ if gt .Ahead 0 }}#A6E3A1{{ end }}",
-            "{{ if gt .Behind 0 }}#89B4FA{{ end }}"
-          ],
           "properties": {
             "branch_icon": "\ue725 ",
             "fetch_stash_count": true,
@@ -36,7 +30,7 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "{{ .UpstreamIcon }} {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  \uf692 {{ .StashCount }}{{ end }} ",
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if .BranchStatus }} <#a6a6a6>{{ .BranchStatus }}</>{{ end }}{{ if .Working.Changed }} <#F38BA8>\uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <#A6E3A1>\uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} <#CBA6F7>\uf692 {{ .StashCount }}</>{{ end }} ",
           "type": "git"
         },
         {
